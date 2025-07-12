@@ -1,0 +1,76 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+}
+
+main{
+    background-color: rgb(246, 246, 246);
+    min-height: 100vh;
+    margin-top: 0;
+}
+
+#navbar{
+    list-style-type: none;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+}
+
+#navbar> li:nth-child(1) > a > img{
+    width: 4.5vw;
+    height: 4.5vw;
+    padding: 0.5vw 0vw 0vw 1vw;
+    
+}
+
+#navbar > li:nth-child(2) > img {
+    width: 2vw;
+    height: 2vw;
+    padding: 0.5vw 3.5vw 0vw 0vw;
+}
+
+#popoutMenu{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right:0;
+    top:0;
+    min-height: 150vh;
+    background-color: rgb(193, 220, 223);
+    width: 25vh;
+    margin: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+#closeMenu{
+    width: 2.5vh;
+    height: 2.5vh;
+    padding: 3vh 2vh 0vh 0vh;
+    margin-left: auto;
+}
+
+#popoutMenuList{
+    list-style-type: none;
+}
+
+#popoutMenuList > li > a {
+    font-family: sans-serif;
+    font-weight: 500;
+    color:rgb(27, 26, 26);
+    text-decoration: none;
+}
+
+.menuOpen{
+    transform: translateX(0%);
+}
+.menuClosed{
+    transform: translateX(100%);
+}
+
+/* note: change all vw to vh!!  */
+
