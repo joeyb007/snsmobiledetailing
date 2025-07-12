@@ -17,10 +17,9 @@
             <img id="closeMenu" src="{{url_for('static', filename='images/close.png')}}">
             <ul id="popoutMenuList">
                 <li> <a href="{{url_for('home')}}">Home</a> </li>
-                <li> <a>About Us</a> </li>
+                <li> <a>About</a> </li>
                 <li> <a>Pricing</a> </li>
                 <li> <a>Contact</a> </li>
-                <li> <a>Testimonials</a> </li>
             </ul>
         </nav>
         <!--code for the reusable navbar -->
@@ -36,9 +35,7 @@
         {% block main %}
         {% endblock %}
     </main>
-    <footer>
-        {% block footer %}
-        {% endblock %}
+    <footer id="footer">
     </footer>
 </body>
 <script src="{{url_for('static', filename='js/base.js')}}"></script>
