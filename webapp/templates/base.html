@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/base.css')}}"/>
@@ -36,6 +39,23 @@
         {% endblock %}
     </main>
     <footer id="footer">
+        <div id='firstFooterDiv'class="footerDiv">
+            <ul id="socialsList">
+                <li><a href="https://www.tiktok.com/@sns.detailing" target="_blank" ><img src="{{url_for('static', filename='images/tiktok.png')}}"></a></li>
+                <li><a href="https://www.instagram.com/sns.mobiledetailing" target="_blank" ><img src="{{url_for('static', filename='images/instagram.webp')}}"></a></li>
+                <li><a href="mailto:soapnshinemobiledetailing@gmail.com" target="_blank" ><img src="{{url_for('static', filename='images/email.png')}}"></a></li>
+                <!-- Add email functionality-->
+            </ul>
+            <p id="copyright">Copyright © 2025. All rights reserved.</p>
+        </div>
+        <div class="textFooterDiv">
+            <h1>About us</h1>
+            <p> Soap 'N Shine is a GTA-based mobile auto detailing service, guaranteeing satisfaction with each wash.</p>
+        </div>
+        <div class="textFooterDiv">
+            <h1>Get a Quote</h1>
+            <p>Contact us via email or social media direct message for free, same-day quote.</p>
+        </div>
     </footer>
 </body>
 <script src="{{url_for('static', filename='js/base.js')}}"></script>
