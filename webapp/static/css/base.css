@@ -29,8 +29,8 @@ main{
 }
 
 #navbar> li:nth-child(1) > a > img{
-    width: 6vw;
-    height: 6vw;
+    width: 10vh;
+    height: 10vh;
     padding: 0.5vw 0vw 0vw 1vw;
     margin-left: 2vw;
     
@@ -100,7 +100,6 @@ main{
     font-family: "Inter", sans-serif;
     background: linear-gradient(45deg, #A6CBD8, #43B2C8);
     border-radius: 8px;
-    padding: 14px 26px;
-    font-size: 1rem;
+    padding: 2vh 4vh;
+    font-size: 1em;
 }
-/* note: change all vw to vh!!  */

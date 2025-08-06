@@ -9,7 +9,12 @@ Soap 'N Shine - Home
 {% endblock %}
 
 {% block main %}
+<div id="firstContentBlock">
     <h1 id="homeTitle">PROFESSIONAL GRADE DETAILING AT YOUR DOORSTEP.</h1>
-    <p>Soap ‘N Shine™ offers remote, satisfaction-guaranteed detailing services across Peel Region and the GTA. </p>
+    <p class="paragraphText">Soap ‘N Shine™ offers remote, satisfaction-guaranteed detailing services across <span class="highlightedParagraphText">Peel Region</span> and the <span class="highlightedParagraphText">GTA.</span> </p>
     <button class="bookNowButton">Book Now</button>
+</div>
+<div id="carousel">
+    <img id="currentCarouselImage" src="{{url_for('static', filename='images/carousel/carousel1.jpg')}}">
+</div>
 {% endblock %}

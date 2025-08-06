@@ -1,9 +1,44 @@
 main{
-    padding: 14vh 1vh;
+    padding: 18vh 12vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
 }
-
+#firstContentBlock{
+    width: 90vh;
+}
 #homeTitle{
     font-family:"Inter", sans-serif;
     color: #3E3E3E;
     font-weight: 500;
+    font-size: 2.75rem;
+}
+
+.paragraphText{
+    color: #717070;
+    font-family: "Inter", sans-serif;
+    width: 65vh;
+    margin-bottom: 8vh;
+    font-size: 1.25rem;
+}
+
+.highlightedParagraphText{
+    color: #52A0BD;
+    font-weight: 600;
+}
+
+
+#carousel{
+    margin-top: 5vh;
+    width: 45vh;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    display: flex;
+}
+
+#currentCarouselImage{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
