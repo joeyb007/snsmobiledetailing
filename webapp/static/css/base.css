@@ -7,7 +7,7 @@ body{
 }
 
 main{
-    background-color: rgb(246, 246, 246);
+    background-color: rgb(248, 248, 248);
     min-height: 100vh;
     margin:0;
 }
@@ -19,71 +19,26 @@ main{
     flex-direction: row;
     justify-content: space-between;
     margin: 0;
-}
-
-#navbar> li:nth-child(1) > a > img{
-    width: 4.5vw;
-    height: 4.5vw;
-    padding: 0.5vw 0vw 0vw 1vw;
-    
-}
-
-#navbar > li:nth-child(2) > img {
-    width: 2vw;
-    height: 2vw;
-    padding: 0.5vw 3.5vw 0vw 0vw;
-}
-
-#popoutMenu{
-    display: flex;
-    flex-direction: column;
+    background-color: white; /* ensure the shadow is visible */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* shadow below */
+    width: 100%;
     position: fixed;
-    right:0;
-    top:0;
-    min-height: 150vh;
-    background-color: rgb(238, 238, 238);
-    width: 15vh;
-    margin: 0;
-    transition: transform 0.3s ease-in-out;
-}
-
-#closeMenu{
-    width: 2vh;
-    height: 2vh;
-    padding: 3vh 2vh 1vh 0vh;
-    margin-left: auto;
-}
-
-#popoutMenuList{
-    list-style-type: none;
+    top: 0;
+    height: 12vh;
     padding: 0;
 }
 
-#popoutMenuList > li > a {
-    font-family: "Inter", sans-serif;
-    font-weight: 550;
-    color:rgb(34, 34, 34);
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color .3s;
+#navbar> li:nth-child(1) > a > img{
+    width: 6vw;
+    height: 6vw;
+    padding: 0.5vw 0vw 0vw 1vw;
+    margin-left: 2vw;
+    
+}
+#navbar> li:nth-child(2) > button{
+    margin-right: 2vw;
 }
 
-#popoutMenuList > li {
-    margin: 5vh 2vh;
-    padding: 0.5vh;
-    text-align: center;
-    border-radius: 0.5rem;
-}
-#popoutMenuList > li > a:hover {
-    color:rgb(136, 196, 206);
-}
-
-.menuOpen{
-    transform: translateX(0%);
-}
-.menuClosed{
-    transform: translateX(100%);
-}
 
 #footer {
     width: 100vw;
@@ -137,5 +92,15 @@ main{
 .textFooterDiv > h1{
     font-size: 3vh;
 }
-/* note: change all vw to vh!!  */
 
+.bookNowButton{
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(45deg, #A6CBD8, #43B2C8);
+    border-radius: 8px;
+    padding: 14px 26px;
+    font-size: 1rem;
+}
+/* note: change all vw to vh!!  */

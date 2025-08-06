@@ -7,6 +7,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/base.css')}}"/>
+    {% block styles %}
+    {% endblock %}
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <title>
         {% block title %}
@@ -15,21 +17,11 @@
 </head>
 <body>
     <header>
-        <!-- code for the menu popout-->
-        <nav id="popoutMenu" class="menuClosed">
-            <img id="closeMenu" src="{{url_for('static', filename='images/close.png')}}">
-            <ul id="popoutMenuList">
-                <li> <a href="{{url_for('home')}}">Home</a> </li>
-                <li> <a>About</a> </li>
-                <li> <a>Pricing</a> </li>
-                <li> <a>Contact</a> </li>
-            </ul>
-        </nav>
         <!--code for the reusable navbar -->
         <nav>
             <ul id="navbar">
                 <li class="navbarListElement"><a href='{{url_for("home")}}'><img src="{{ url_for('static', filename='favicon.ico') }}"></a></li>
-                <li class="navbarListElement" id="menuStackButton"><img src="{{ url_for('static', filename='images/menu.png') }}"/></li>
+                <li><button class="bookNowButton">Book now</button> </li>
             </ul>
         </nav>
         

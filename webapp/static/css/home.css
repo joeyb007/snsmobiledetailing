@@ -1,0 +1,9 @@
+main{
+    padding: 14vh 1vh;
+}
+
+#homeTitle{
+    font-family:"Inter", sans-serif;
+    color: #3E3E3E;
+    font-weight: 500;
+}
