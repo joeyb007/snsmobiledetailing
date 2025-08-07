@@ -2,17 +2,18 @@ main{
     padding: 18vh 12vh;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-start;
 }
 #firstContentBlock{
-    width: 90vh;
+    width: 80vh;
+    margin-bottom: 20vh
 }
 #homeTitle{
     font-family:"Inter", sans-serif;
     color: #3E3E3E;
     font-weight: 500;
-    font-size: 2.75rem;
+    font-size: 2.5rem;
 }
 
 .paragraphText{
@@ -31,14 +32,21 @@ main{
 
 #carousel{
     margin-top: 5vh;
-    width: 45vh;
+    width: 55vh;
     overflow: hidden;
     aspect-ratio: 1 / 1;
     display: flex;
+    border-radius: 25px;
+}
+#carouselTrack {
+  display: flex;
+  width: 900%; 
+  transition: transform 1s ease-in-out;
 }
 
-#currentCarouselImage{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+.carouselImage {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+
 }

@@ -8,8 +8,8 @@ body{
 
 main{
     background-color: rgb(248, 248, 248);
-    min-height: 100vh;
     margin:0;
+    z-index:1;
 }
 
 #navbar{
@@ -26,6 +26,7 @@ main{
     top: 0;
     height: 12vh;
     padding: 0;
+    z-index:2;
 }
 
 #navbar> li:nth-child(1) > a > img{
@@ -42,11 +43,11 @@ main{
 
 #footer {
     width: 100vw;
-    height: 20vh;
     padding: 0;
     margin: 0;
     background-color: rgb(26, 26, 26);
     display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -76,6 +77,9 @@ main{
     padding-left: 3.5vh;
     font-family: "Inter", sans-serif;
     font-weight: 500;
+    font-size:0.75rem;
+    padding-bottom: 2vh;
+    margin: 0;
 }
 
 #firstFooterDiv{
@@ -84,13 +88,18 @@ main{
 
 .textFooterDiv{
     flex: 1;
-    padding: 1vh 6vh 6vh 0vh;
+    padding: 1vh 2vh 2vh 0vh;
     color: rgb(212, 212, 212);
     font-family: "Inter", sans-serif;
 }
 
-.textFooterDiv > h1{
-    font-size: 3vh;
+.textFooterDiv h1{
+    font-size: 1.25rem;
+}
+
+.textFooterDiv p{
+    font-size: 0.75rem;
+    color: rgb(115, 115, 115);
 }
 
 .bookNowButton{

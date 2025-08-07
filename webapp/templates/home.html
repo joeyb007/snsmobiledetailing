@@ -15,6 +15,20 @@ Soap 'N Shine - Home
     <button class="bookNowButton">Book Now</button>
 </div>
 <div id="carousel">
-    <img id="currentCarouselImage" src="{{url_for('static', filename='images/carousel/carousel1.jpg')}}">
+    <div id="carouselTrack">
+        <img class="carouselImage" src="{{url_for('static', filename='images/carousel/carousel1.jpg')}}">
+        <img class="carouselImage" src="{{url_for('static', filename='images/carousel/carousel2.jpg')}}">
+        <img class="carouselImage" src="{{url_for('static', filename='images/carousel/carousel3.jpg')}}">
+        <img class="carouselImage" src="{{url_for('static', filename='images/carousel/carousel4.jpg')}}">
+        <img class="carouselImage" src="{{url_for('static', filename='images/carousel/carousel5.png')}}">
+        <img class="carouselImage" src="{{url_for('static', filename='images/carousel/carousel6.png')}}">
+        <img class="carouselImage" src="{{url_for('static', filename='images/carousel/carousel7.png')}}">
+        <img class="carouselImage" src="{{url_for('static', filename='images/carousel/carousel8.png')}}">
+        <img class="carouselImage" src="{{url_for('static', filename='images/carousel/carousel9.png')}}">
+    </div>
 </div>
 {% endblock %}
+
+{%block script%}
+<script src="{{url_for('static', filename='js/home.js')}}"></script>
+{%endblock%}
