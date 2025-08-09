@@ -17,6 +17,22 @@ main{
     background-color: rgb(248, 248, 248);
     margin:0;
     z-index:1;
+    padding-top: 12vh;
+    display: flex;
+}
+.largeTitle{
+    font-family:"Inter", sans-serif;
+    color: #3E3E3E;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.paragraphText{
+    color: #717070;
+    font-family: "Inter", sans-serif;
+    max-width: 45vw;
+    margin-bottom: 8vh;
+    font-size: 1.25rem;
 }
 
 #navbar{
@@ -34,6 +50,7 @@ main{
     height: 12vh;
     padding: 0;
     z-index:2;
+    margin-bottom: 12vh;
 }
 
 #navbar> li:nth-child(1) > a > img{
@@ -41,9 +58,8 @@ main{
     height: 10vh;
     padding: 0.5vw 0vw 0vw 1vw;
     margin-left: 2vw;
-    
 }
-#navbar> li:nth-child(2) > button{
+#navbar> li:nth-child(2) > a{
     margin-right: 2vw;
 }
 
@@ -118,10 +134,26 @@ main{
     color: white;
     font-weight: 600;
     font-family: "Inter", sans-serif;
-    background: linear-gradient(45deg, #A6CBD8, #43B2C8);
+    background: linear-gradient(45deg, #b6d9e6, #2c7281);
+    background-size:200%;
+    background-position: left;
     border-radius: 8px;
     padding: 2vh 4vh;
     font-size: 1em;
+    transition: background-position 0.3s ease;
+    text-decoration: none;
+}
+
+.bookNowButton:hover,
+.bookNowButton:active,
+.bookNowButton:focus
+{
+    background-position: right;
+}
+
+.highlightedParagraphText{
+    color: #52A0BD;
+    font-weight: 600;
 }
 
 @media (max-width: 600px){

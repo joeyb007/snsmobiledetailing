@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{%block styles%}
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/contact.css')}}"/>
+{%endblock%}
+
+{% block title %}
+Contact Us
+{% endblock %}
+
+{% block main %}
+<div id="topContentContact">
+    <h1 class="largeTitle" id="getInTouch">Get in <span class="highlightedParagraphText">touch.</span></h1>
+    <p class="paragraphText"> Contact us to learn more about pricing, book a detail, or inquire further. We are available on demand, 24/7, replying to all inquiries within the day. </p>
+</div>
+<div id="contactInformationCards">
+    <article class='contactCard' id="emailContact">
+        <a href="mailto:soapnshinemobiledetailing@gmail.com" target="_blank" ><img class="contactImage" src="{{url_for('static', filename='images/email.png')}}"></a>
+        <h1 class="cardTitle">Email</h1>
+        <p class="cardParagraph">soapnshinemobiledetailing@gmail.com</p>
+    </article>
+    <article class='contactCard' id="phoneContact">
+        <a href="tel:+14379295974" target="_blank" ><img class="contactImage" src="{{url_for('static', filename='images/phone.png')}}"></a>
+        <h1 class="cardTitle">Text or Call</h1>
+        <p class="cardParagraph">+1 (437) 929-5974</p>
+    </article>
+    <article class='contactCard' id="igContact">
+        <a href="https://www.instagram.com/sns.mobiledetailing" target="_blank" ><img class="contactImage" src="{{url_for('static', filename='images/instagram.webp')}}"></a>
+        <h1 class="cardTitle">Instagram</h1>
+        <p class="cardParagraph">@sns.mobiledetailing</p>
+    </article>
+    <article class='contactCard' id="tiktokContact">
+        <a href="https://www.tiktok.com/@sns.detailing" target="_blank" ><img class="contactImage" src="{{url_for('static', filename='images/tiktok.png')}}"></a>
+        <h1 class="cardTitle">TikTok</h1>
+        <p class="cardParagraph">@sns.detailing</p>
+    </article>
+</div>
+{% endblock%}

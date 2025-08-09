@@ -21,7 +21,7 @@
         <nav>
             <ul id="navbar">
                 <li class="navbarListElement"><a href='{{url_for("home")}}'><img src="{{ url_for('static', filename='favicon.ico') }}"></a></li>
-                <li><button class="bookNowButton">Book now</button> </li>
+                <li><a type='btn'class="bookNowButton" href="{{url_for('contact')}}">Book Now</a> </li>
             </ul>
         </nav>
         
